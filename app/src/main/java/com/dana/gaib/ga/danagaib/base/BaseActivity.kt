@@ -21,7 +21,6 @@ import com.dana.gaib.ga.danagaib.utils.StatusBarUtil
 /**
  * Activity 基类
  *
- * @param P MVP Presenter 类，继承 [BaseMVPPresenter]，若没有，使用 [BlankPresenter]
  * @param DB DataBinding 类，继承 [ViewDataBinding]
  */
 abstract class BaseActivity<DB : ViewDataBinding>: AppCompatActivity(),BaseMVPView,
