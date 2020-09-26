@@ -38,7 +38,6 @@ abstract class BaseActivity<DB : ViewDataBinding>: AppCompatActivity(),BaseMVPVi
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        createPresenter()
         // 保存当前 Context 对象
         mContext = this
 
@@ -54,7 +53,6 @@ abstract class BaseActivity<DB : ViewDataBinding>: AppCompatActivity(),BaseMVPVi
         baseBinding.handler = RootHandler(this)
     }
 
-    abstract fun createPresenter()
 
     /**
      * 重写 onDestroy() 方法，移除 Activity 管理以及 MVP 生命周期管理
